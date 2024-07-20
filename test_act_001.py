@@ -6,11 +6,11 @@ class TestDemanaNom(unittest.TestCase):
 
     @patch('builtins.input', return_value='Joan')
     def test_demana_nom_joan(self, mock_input):
-        self.assertEqual(act_001.demanaNom(), 'Joan')
+        self.assertEqual(act_001.demanaNom(), 'Hola Joan!')
 
     @patch('builtins.input', return_value='Anna')
     def test_demana_nom_anna(self, mock_input):
-        self.assertEqual(act_001.demanaNom(), 'Anna')
+        self.assertEqual(act_001.demanaNom(), 'Hola Anna!')
 
 if __name__ == '__main__':
     unittest.main()
